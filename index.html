@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-blur"></div>
+    <div class="container">
+        <a href="#survey-form" class="survey-link-btn">
+            <i class="fas fa-poll"></i> Take Our Survey
+        </a>
+        
+        <header>
+            <h1 id="title">Customer Feedback</h1>
+            <p id="description">Help us improve our services</p>
+        </header>
+
+        <div id="main-form">
+            <form id="survey-form">
+                <!-- Personal Information -->
+                <fieldset class="glass-card">
+                    <legend><i class="fas fa-user"></i> Personal Information</legend>
+                    <div class="form-row">
+                        <div class="label-col">
+                            <label id="name-label" for="name">Full Name</label>
+                        </div>
+                        <div class="input-col">
+                            <input type="text" id="name" class="input-field" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="label-col">
+                            <label id="email-label" for="email">Email Address</label>
+                        </div>
+                        <div class="input-col">
+                            <input type="email" id="email" class="input-field" placeholder="your.email@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="label-col">
+                            <label id="number-label" for="age">Age <span>(optional)</span></label>
+                        </div>
+                        <div class="input-col">
+                            <input type="number" id="number" min="12" max="120" class="input-field" placeholder="Your age">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Current Role -->
+                <fieldset class="glass-card">
+                    <legend><i class="fas fa-briefcase"></i> Current Role</legend>
+                    <div class="form-row">
+                        <div class="label-col">
+                            <label for="currentPos">Your Current Role</label>
+                        </div>
+                        <div class="input-col">
+                            <select id="dropdown" name="currentPos" class="dropdown">
+                                <option disabled selected value>Select your role</option>
+                                <option value="student">Student</option>
+                                <option value="job">Full Time Job</option>
+                                <option value="learner">Full Time Learner</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Recommendation -->
+                <fieldset class="glass-card">
+                    <legend><i class="fas fa-star"></i> Recommendation</legend>
+                    <div class="form-row">
+                        <div class="label-col">
+                            <label>How likely would you recommend us?</label>
+                        </div>
+                        <div class="input-col">
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="recommend" value="definitely" checked>
+                                    <span class="radio-custom"></span>
+                                    Definitely
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="recommend" value="maybe">
+                                    <span class="radio-custom"></span>
+                                    Maybe
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="recommend" value="not-sure">
+                                    <span class="radio-custom"></span>
+                                    Not sure
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <div class="form-row">
+                    <div class="label-col"></div>
+                    <div class="input-col">
+                        <button id="submit" type="submit" class="btn-grad">
+                            <i class="fas fa-paper-plane"></i> Submit Feedback
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <footer>
+            <p>Created with <i class="fas fa-heart"></i> by Chinmayee Avadhani</p>
+        </footer>
+    </div>
+</body>
+</html>
