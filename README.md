@@ -13,5 +13,3 @@ A clean and responsive survey form built using only **HTML** and **CSS**. This p
 
 - HTML5
 - CSS3
-
-## 📁 Project Structure
